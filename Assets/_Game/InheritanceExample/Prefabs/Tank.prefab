@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3bbf68fb3b5067419ec49a4ca01249d, type: 2}
+  - {fileID: 2100000, guid: 70926620cfe1f684f9592fa458c15da2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3bbf68fb3b5067419ec49a4ca01249d, type: 2}
+  - {fileID: 2100000, guid: 70926620cfe1f684f9592fa458c15da2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -261,7 +261,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3bbf68fb3b5067419ec49a4ca01249d, type: 2}
+  - {fileID: 2100000, guid: 70926620cfe1f684f9592fa458c15da2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,9 +294,9 @@ GameObject:
   - component: {fileID: 4549945117582617888}
   - component: {fileID: 4549945117582617917}
   - component: {fileID: 4549945117582617889}
-  - component: {fileID: 4642552234530393085}
+  - component: {fileID: 2894515920540289708}
   m_Layer: 0
-  m_Name: Charger
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4642552234530393085
+--- !u!114 &2894515920540289708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,13 +356,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4549945117582617916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5acf9abd026ca764fbc5a6a3cf576039, type: 3}
+  m_Script: {fileID: 11500000, guid: a04c12ee18f1e504abec131bcf28b44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 2
+  _health: 8
   _deathSound: {fileID: 8300000, guid: 3e3e3e5716c2533409755571490cc2c4, type: 3}
   _hitSound: {fileID: 8300000, guid: eeb3bcaf9a1e08b4ca2540b8b4157f6b, type: 3}
-  MoveSpeed: 0.1
-  _speedIncreaseMultiplier: 2
-  _powerUpToSpawn: {fileID: 8746898758342323236, guid: 52bf88cddf42dd94394ecc34f9a3d455,
-    type: 3}
+  MoveSpeed: 0.05
