@@ -14,6 +14,7 @@ public class TurretController : MonoBehaviour
 
     private Camera _camera;
     private float _elapsedCooldownTime;
+    public bool _hasPowerUp;
 
     private void Awake()
     {
@@ -34,7 +35,6 @@ public class TurretController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(FireCooldown);
         TrackCooldown();
 
         if (_turrets == null || _turrets.Count == 0) return;

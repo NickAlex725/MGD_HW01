@@ -15,12 +15,22 @@ public class RapidFirePowerUp : PowerUpBase
 
     protected override void PowerUp()
     {
-        _FireCooldownHolder = _turret.FireCooldown;
-        currentCD = PowerUpDuration;
-        _turret.FireCooldown *= 0.5f;
+        if(!_turret._hasPowerUp)
+        {
+            _FireCooldownHolder = _turret.FireCooldown;
+            currentCD = PowerUpDuration;
+            _turret.FireCooldown *= 0.5f;
+            _turret._hasPowerUp = true;   
+        }
+        else
+        {
+            //reset cd if hit while already powered up
+            currentCD = PowerUpDuration;
+        }
     }
     protected override void PowerDown()
     {
+        _turret._hasPowerUp = false;
         _turret.FireCooldown = _FireCooldownHolder;
         Destroy(gameObject);
     }
